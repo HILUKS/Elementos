@@ -81,7 +81,7 @@
 
         var meta = document.createElement('meta');
         meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=0.6, user-scalable=no, shrink-to-fit=yes';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
         //container.className = "unity-mobile";
 
@@ -93,7 +93,7 @@
          //canvas.style.height =( window.innerHeight +'px')/(16/9);
         
         canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight +'px';
+        canvas.style.height = (window.innerHeight +'px)*0.8';
      
            //unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
